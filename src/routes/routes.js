@@ -1,11 +1,12 @@
 const express = require("express");
+const controllers = require("../controllers/controllers");
 
 const router = express.Router();
 
-router.get("/blagues", (req, res) => res.send("Hello World!"));
-router.get("/blagues/:id", (req, res) => res.send("Hello World!"));
-router.get("/blagues/random", (req, res) => res.send("Hello World!"));
+router.get("/blagues", controllers.getAllJokes);
+router.get("/blagues/random", controllers.getRandomJoke);
+router.get("/blagues/:id", controllers.getJokeById);
 
-router.post("/blagues", (req, res) => res.send("Hello World!"));
+router.post("/blagues", controllers.createJoke);
 
 module.exports = router;
