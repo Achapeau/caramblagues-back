@@ -1,4 +1,3 @@
-const bodyParser = require("body-parser");
 const app = require("./src/app");
 
 const sequelize = require("./src/database/db");
@@ -8,8 +7,6 @@ const seedData = require("./scripts/seed");
 async function authenticateDb() {
   return sequelize.authenticate();
 }
-
-app.use(bodyParser.json());
 
 authenticateDb()
   .then(async () => {
