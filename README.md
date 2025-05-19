@@ -26,6 +26,32 @@ La documentation complète de l'API est accessible via Swagger à l'adresse [`/a
 
 ---
 
+## 🎭 Format des blagues
+
+Les blagues sont stockées sous forme de devinettes avec deux champs principaux :
+
+question : l'énoncé de la blague / devinette.
+
+answer : la chute ou réponse.
+
+Exemple de blague renvoyée :
+
+```json
+Copier
+Modifier
+   {
+   "from":"Papa",
+   "question": "Que chante le plombier ?",
+   "answer": "- Un syphon font font les petites clés à molette !"
+   }
+```
+
+Le champ "from" permet de savoir si la blague est issue du projet lui-même ou d'une source externe (par défaut : "Caramblagues!").
+
+ℹ️ L’API expose sa documentation complète via Swagger à l’adresse /api-docs.
+
+---
+
 ## 🛠️ Installation
 
 1. Clonez le dépôt :
@@ -54,6 +80,8 @@ La documentation complète de l'API est accessible via Swagger à l'adresse [`/a
    npm start
    ```
 
+---
+
 ## 🗂️ Architecture du projet
 
 Ce projet suit une architecture **MVC** simplifiée:
@@ -81,11 +109,15 @@ Ce projet suit une architecture **MVC** simplifiée:
 
     ```
 
+---
+
 ## 🌐 Déploiement
 
 - Le projet est prévu pour être déployé sur Render pour la partie back.
 
 - Une interface minimaliste en GitHub Pages est prévue pour interagir avec l’API (affichage de blague).
+
+---
 
 ## 📝 Remarques
 
