@@ -8,7 +8,9 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://Achapeau.github.io",
+    origin: "https://achapeau.github.io",
+    credentials: false,
+    methods: ["GET"],
   })
 );
 
