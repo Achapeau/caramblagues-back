@@ -22,7 +22,7 @@ const options = {
       },
     ],
     paths: {
-      "/caramblagues-back/blagues": {
+      "/blagues": {
         get: {
           tags: ["Joke"],
           summary: "Obtenir la liste de toutes les blagues",
@@ -87,7 +87,7 @@ const options = {
           },
         },
       },
-      "/caramblagues-back/blagues/random": {
+      "/blagues/random": {
         get: {
           tags: ["Joke"],
           summary: "Obtenir une blague au hasard",
@@ -112,7 +112,7 @@ const options = {
           },
         },
       },
-      "/caramblagues-back/blagues/{id}": {
+      "/blagues/{id}": {
         get: {
           tags: ["Joke"],
           summary: "Obtenir une blague par son id",
