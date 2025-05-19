@@ -1,7 +1,7 @@
 {
   "name": "caramblagues-back",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mini API de blagues types carambar pour démonstration technique.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,6 +17,8 @@
   "dependencies": {
     "express": "^5.1.0",
     "sequelize": "^6.37.7",
-    "sqlite3": "^5.1.7"
+    "sqlite3": "^5.1.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
   }
 }
