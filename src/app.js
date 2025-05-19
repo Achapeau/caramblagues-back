@@ -11,6 +11,6 @@ app.use(bodyParser.json());
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 const routes = require("./routes/routes");
-app.use("/caramblagues-back", routes);
+app.use(routes);
 
 module.exports = app;
